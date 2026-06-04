@@ -12,6 +12,33 @@ como parte del bono de programacion del segundo corte de Matematicas Discretas I
 Cada problema incluye logica matematica documentada e interfaz grafica interactiva.
 
 ---
+## Uso de Inteligencia Artificial
+
+Durante el desarrollo de este proyecto se utilizó como apoyo en problemas específicos durante la implementación de la interfaz. Sin embargo, el modelado matemático del problema, todo el codigo de las funciones implementadas y la estructura general del programa fueron desarrollados manualmente.
+
+En cuanto a la interfaz gráfica, elementos como:
+
+- Estructura base de la interfaz  
+- Selección de fuentes  
+- Selección de colores  
+- Distribución visual de componentes  
+- Incorporación del icono  
+
+fueron realizados completamente de forma manual.
+
+Considero que el uso de estas herramientas fue complementario al proceso de desarrollo, utilizándose como apoyo técnico y no como sustituto del razonamiento, diseño o implementación principal del proyecto.
+
+### Uso específico de IA
+
+La inteligencia artificial se utilizó principalmente para:
+
+- Formalización y mejora de comentarios/documentación del código  
+- Resolver dudas puntuales de implementación  
+- Apoyo específico en algunos problemas de interfaz  
+- Revisar redacción y presentación del proyecto  
+
+La construcción de funciones, modelado matemático y diseño general del programa fueron desarrollados manualmente.
+---
 
 ## Problemas resueltos
 
@@ -127,3 +154,5 @@ El programa valida que:
 Ambos algoritmos tienen complejidad **O(n)** en tiempo.  
 El factorial iterativo usa **O(1)** en espacio.  
 El factorial recursivo usa **O(n)** en espacio por la pila de llamadas.
+
+
