@@ -72,6 +72,11 @@ def calcular_p1():
     )
     for a, b, p in ejemplos:
         texto += f"P({a:>2}, {b:>2})  =  {p}\n"
+        texto += (
+        "\n-- Eficiencia --\n"
+        "Factorial iterativo : O(n) tiempo, O(1) espacio\n"
+        "Factorial recursivo : O(n) tiempo, O(n) espacio (pila de llamadas)\n"
+    )
 
     text_res_p1.insert("1.0", texto)
     text_res_p1.config(state="disabled")
@@ -125,7 +130,11 @@ def calcular_p2():
     )
     for a, b, c in ejemplos:
         texto += f"C({a:>2}, {b:>2})  =  {c}\n"
-
+        texto += (
+        "\n-- Eficiencia --\n"
+        "Factorial iterativo : O(n) tiempo, O(1) espacio\n"
+        "Factorial recursivo : O(n) tiempo, O(n) espacio (pila de llamadas)\n"
+    )
     text_res_p2.insert("1.0", texto)
     text_res_p2.config(state="disabled")
 
