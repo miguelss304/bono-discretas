@@ -201,7 +201,7 @@ def generar_triangulo_pascal(n):
     Genera el triangulo de Pascal hasta la fila n.
 
     Retorna:
-        list of lists: cada sublista es una fila del triangulo
+        lista de listas: cada sublista es una fila del triangulo
     """
     triangulo = []
     for i in range(n + 1):
@@ -220,7 +220,7 @@ def casos_de_ejemplo_2():
     con casos pequenos verificables manualmente y casos medianos.
  
     Retorna:
-        list of tuples: [(n, r, C(n,r)), ...]
+        lista de tuplas: [(n, r, C(n,r)), ...]
     """
     casos = [(4, 2), (5, 0), (5, 5), (10, 3), (20, 5)]
     return [(n, r, calcular_combinacion(n, r)) for n, r in casos]

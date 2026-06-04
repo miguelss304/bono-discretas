@@ -103,7 +103,7 @@ def calcular_p2():
     triangulo = generar_triangulo_pascal(n)
     ejemplos  = casos_de_ejemplo_2()
 
-    # Triangulo centrado
+    # Triangulo centrado (hecho con IA, no encontre forma de centrarlo)
     filas_texto = []
     ancho_max = len("  ".join(str(x) for x in triangulo[-1])) + 4
     for fila in triangulo:
@@ -296,6 +296,8 @@ text_res_p2 = tk.Text(
     wrap="none",
     state="disabled"
 )
+
+#Tuve que ayudarme con IA aqui para que se pudiera ver el triangulo de pascal independientemente de su tamaño
 scroll_y_p2 = tk.Scrollbar(frame_res_p2, orient="vertical", command=text_res_p2.yview)
 scroll_x_p2 = tk.Scrollbar(frame_res_p2, orient="horizontal", command=text_res_p2.xview)
 text_res_p2.configure(yscrollcommand=scroll_y_p2.set, xscrollcommand=scroll_x_p2.set)
