@@ -3,12 +3,41 @@
 # ============================================================
 # Una permutacion P(n, r) cuenta el numero de formas de ordenar
 # r objetos distintos tomados de un conjunto de n objetos distintos.
-# El orden importa: (A, B) y (B, A) se cuentan como arreglos distintos.
 #
-# Formula: P(n, r) = n! / (n - r)!
+# En las permutaciones el orden SI importa:
+# (A, B) y (B, A) representan arreglos diferentes.
 #
-# Ejemplo: P(4, 2) = 4! / (4-2)! = 24 / 2 = 12
-# Es decir, hay 12 formas de ordenar 2 objetos de un conjunto de 4.
+# Formula:
+#
+#           P(n, r) = n! / (n-r)!
+#
+# Ejemplo:
+#
+# P(4, 2) = 4! / (4-2)!
+#         = 24 / 2
+#         = 12
+#
+# Es decir, existen 12 formas distintas de ordenar
+# 2 objetos seleccionados de un conjunto de 4.
+#
+# El programa implementa herramientas relacionadas con
+# el calculo de permutaciones:
+#
+# - Calculo iterativo del factorial
+#
+# - Calculo recursivo del factorial
+#
+# - Comparacion entre ambas implementaciones
+#
+# - Calculo general de P(n,r)
+#
+# - Casos de prueba predefinidos para validar resultados
+#
+# Observacion:
+# Las permutaciones aparecen frecuentemente en problemas
+# de ordenamientos, asignaciones, distribuciones y
+# arreglos donde la posicion de los elementos afecta
+# el resultado final.
 # ============================================================
 
 
@@ -101,6 +130,46 @@ def casos_de_ejemplo_1():
     """
     casos = [(4, 2), (5, 3), (6, 0), (10, 3), (20, 5)]
     return [(n, r, calcular_permutacion(n, r)) for n, r in casos]
+
+# ============================================================
+# PROBLEMA 2: Calculadora general de combinaciones C(n, r)
+# ============================================================
+# Una combinacion C(n, r) cuenta el numero de formas de escoger
+# r objetos distintos tomados de un conjunto de n objetos distintos.
+#
+# A diferencia de las permutaciones, aqui el orden NO importa:
+# (A, B) y (B, A) representan la misma seleccion.
+#
+# Formula:
+#
+#           C(n, r) = n! / (r!(n-r)!)
+#
+# Ejemplo:
+#
+# C(4, 2) = 4! / (2!(4-2)!)
+#         = 24 / (2·2)
+#         = 6
+#
+# Es decir, existen 6 formas distintas de escoger
+# 2 objetos de un conjunto de 4 sin importar el orden.
+#
+# Ademas del calculo general de combinaciones, este problema
+# implementa herramientas adicionales relacionadas con
+# propiedades combinatorias:
+#
+# - Verificacion automatica de la identidad:
+#
+#       C(n,r) = C(n,n-r)
+#
+# - Generacion de filas del triangulo de Pascal
+#
+# - Casos de prueba predefinidos para validar resultados
+#
+# Observacion:
+# Las combinaciones aparecen frecuentemente en problemas
+# de seleccion, probabilidades, conteo y coeficientes
+# binomiales.
+# ============================================================
 
 def calcular_combinacion(n, r):
     """
